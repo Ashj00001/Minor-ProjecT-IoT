@@ -1,0 +1,12 @@
+import os
+
+SECRET_KEY = os.getenv("SECRET_KEY", "thalir_super_secret_agri_key_2026")
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day
+
+# Telemetry alert thresholds
+TEMP_HIGH_THRESHOLD = 35.0   # °C
+TEMP_LOW_THRESHOLD = 10.0    # °C
+MOISTURE_LOW_THRESHOLD = 30.0 # %
+MOISTURE_HIGH_THRESHOLD = 85.0# %
+HUMIDITY_HIGH_THRESHOLD = 85.0# %
